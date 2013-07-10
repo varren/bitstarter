@@ -84,9 +84,11 @@ if(require.main == module) {
         .option('-u, --url <url_page>', 'Path to index.html', clone(assertURL), URL_DEFAULT)
         .parse(process.argv);
 
-    if(isFile){
+    if(isFile)
+    {
 	results(cheerioHtmlFile(program.file), program.checks);
-    }else{
+    }else
+    {
         rest.get(program.url).on('complete', function(result, response){
 	    results(cheerio.load(result) , program.checks);
 	});
