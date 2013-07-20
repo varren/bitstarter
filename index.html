@@ -151,9 +151,9 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
 	    </ul>
-	    <ul class="nav pull-right">
+	  <!--  <ul class="nav pull-right">
 	      <li><a href="#ru">RU</a></li>
-            </ul>
+            </ul>-->
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -224,14 +224,20 @@
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
+	    <form action="http://alltparties.bandcamp.com/">
+              <button class="btn btn-success btn-large">Preorder</button>
+            </form>
+	  </div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
+            <form action="https://twitter.com/AllTParties">
+	      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            </form>
+	    <form action="https://www.facebook.com/atparties">
+	      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+            </form>
+	  </div>
         </div>
 	   
 	  
@@ -271,7 +277,7 @@
         </div>
         <div class="span5 copy">
 	  <p>
-	    Some text will be here someday, but now i just fill it with band bio.
+	    This project is made to promote my friends band first album.
 	  </p>
 	  <p> 
 	    All Tomorrow's Parties is a young <strong>indie rock band</strong> based in Moscow, Russia. Their sound is a <strong>fusion of garage rock and psychedelic rock</strong>.
